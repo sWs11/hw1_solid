@@ -31,6 +31,12 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string $redmine_api_token
+ * @property string $jira_api_token
+ * @property string $gitlab_api_token
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereGitlabApiToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereJiraApiToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereRedmineApiToken($value)
  */
 class User extends Authenticatable
 {
